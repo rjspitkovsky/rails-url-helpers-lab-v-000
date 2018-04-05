@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
       set_student.active = true
     else
       set_student.active = false
-    end 
+    end
   end
 
   private
