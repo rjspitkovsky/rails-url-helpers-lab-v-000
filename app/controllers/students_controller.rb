@@ -9,11 +9,13 @@ class StudentsController < ApplicationController
   end
 
   def activate
-    if set_student.active = false
-      set_student.active = true
+    set_student
+    if @student.active = false
+      @student.active = true
     else
-      set_student.active = false
+      @student.active = false
     end
+    @student.save 
   end
 
   private
